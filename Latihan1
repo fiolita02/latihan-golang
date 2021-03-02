@@ -1,0 +1,188 @@
+package main
+
+import "fmt"
+
+// test komentar inline
+
+/* test
+   komentar
+   multiline
+*/
+
+/*func main() {
+	fmt.Println("Hello world")
+	fmt.Println("Hello", "world", "how", "are", "you")
+}*/
+
+/*func main() {
+	var firstName string = "Nathaniel"
+
+	lastName := "Nathan"
+
+	fmt.Printf("Hello %s %s!\n", firstName, lastName)
+}*/
+
+/*func main() {
+	var one, two, three string = "satu", "dua", "tiga"
+
+	four, five, six := "empat", "lima", "enam"
+
+	_ = "learn golang"
+}*/
+
+/*func main() {
+
+	var positiveNumber uint8 = 45
+	var negativeNumber = -1234567890
+
+	fmt.Printf("Bilangan positif: %d\n", positiveNumber)
+	fmt.Printf("Bilangan negatif: %d\n", negativeNumber)
+
+}*/
+
+/*func main() {
+	var value = (((2+6)%3)*4 - 2) / 3
+	var isEqual = (value == 3)
+	fmt.Println(value, isEqual)
+
+}*/
+
+/*func main() {
+	var left = true
+	var right = false
+
+	var leftAndRight = left && right
+	var leftOrRight = left || right
+	var leftReverse = !left
+
+	fmt.Println(leftAndRight)
+	fmt.Println(leftOrRight)
+	fmt.Println(leftReverse)
+}*/
+
+/*func main() {
+	var point = 8000
+	var percent = point / 100
+
+	if percent >= 100 {
+		fmt.Println("Nilai anda sempurna!")
+	} else if percent >= 75 {
+		fmt.Println("Selamat anda lulus!")
+	} else {
+		fmt.Println("Anda tidak lulus!")
+	}
+}*/
+
+/*func main() {
+
+	var point = 8
+
+	switch point {
+	case 10:
+		fmt.Println("Perfect!")
+
+	case 9, 8, 7:
+		fmt.Println("Nice!")
+
+	default:
+		fmt.Println("Not bad!")
+	}
+
+}*/
+
+/*func main() {
+
+	var point = 7
+
+	switch {
+	case (point > 8):
+		fmt.Println("Awesome!")
+
+	case (point < 7 || point > 6):
+		fmt.Println("Well played!")
+		fallthrough
+	default:
+		fmt.Println("Nice try!")
+	}
+
+}*/
+
+/*func main() {
+
+	for i := 0; i < 5; i++ {
+		fmt.Println("Angka", i)
+	}
+
+}*/
+func jumlah(angka1 int, angka2 int) int {
+
+	fmt.Println("Masukkan angka yang diinginkan")
+	fmt.Println("==============================")
+	fmt.Print("Angka 1: ")
+	fmt.Scan(&angka1)
+	fmt.Print("Angka 2: ")
+	fmt.Scan(&angka2)
+	var hitungPenjumlahan int = angka1 + angka2
+	return hitungPenjumlahan
+}
+
+func main() {
+
+	var x int = 0
+	for x == 0 {
+		fmt.Println("Kalkulator")
+		fmt.Println("=================================")
+		fmt.Println("Operator:")
+		fmt.Println("+")
+		fmt.Println("-")
+		fmt.Println("*")
+		fmt.Println("/")
+		fmt.Print("Masukkan operator yang diinginkan: ")
+		fmt.Scan(&x)
+
+		for x == 1 {
+			var angka1 int = 0
+			var angka2 int = 0
+
+			var jumlah = jumlah(angka1, angka2)
+			fmt.Println("Hasil:", jumlah)
+			x = 0
+
+		}
+		for x == 2 {
+
+			var angka1 int
+			var angka2 int
+
+			fmt.Println("Masukkan angka yang diinginkan")
+			fmt.Println("==============================")
+			fmt.Print("Angka 1: ")
+			fmt.Scan(&angka1)
+			fmt.Print("Angka 2: ")
+			fmt.Scan(&angka2)
+			var hitungPengurangan int = angka1 - angka2
+			fmt.Println("Hasil:", hitungPengurangan)
+
+			x = 0
+
+		}
+		for x == 3 {
+			var angka1 int
+			var angka2 int
+
+			fmt.Println("Masukkan angka yang diinginkan")
+			fmt.Println("==============================")
+			fmt.Print("Angka 1: ")
+			fmt.Scan(&angka1)
+			fmt.Print("Angka 2: ")
+			fmt.Scan(&angka2)
+			var hitungPerkalian int = angka1 * angka2
+			fmt.Println("Hasil:", hitungPerkalian)
+			x = 0
+		}
+		if x == 4 {
+			break
+		}
+	}
+}
+
